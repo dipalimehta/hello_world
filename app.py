@@ -12,7 +12,7 @@ def run_git_command(command):
 # Clone the repository
 run_git_command(f'git clone {repo_url} {local_repo_path}')
 
-for i in range(100, 365):
+for i in range(1, 365):
     for j in range(0, randint(1, 10)):
         days_ago = timedelta(days=i)
         date_string = (datetime.now() - days_ago).strftime('%Y-%m-%d')
